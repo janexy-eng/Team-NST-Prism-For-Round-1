@@ -2,7 +2,7 @@ import random
 running=True
 correct_ans=random.randint(1,50)
 att=0
-while True:
+while running:
     att+=1
     user_guess=int(input())
     if user_guess>correct_ans:
@@ -12,4 +12,5 @@ while True:
     else:
         print(f"Correct! You guessed it in {att} attempts!")
         running=False
+
 
